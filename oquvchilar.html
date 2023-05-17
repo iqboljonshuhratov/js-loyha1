@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom stillar bilan ishlash</title>
+    <link rel="stylesheet" href="./bootstrapt/index.css">
+    <link rel="stylesheet" href="./o'quvchilar/oquvchi.css">
+</head>
+<body id="B" onload="loaded()" onkeyup="keyUp(event)">
+    <main class="d-flex " id="good" >
+
+        <div id="fixed">
+        <div id="sidebar" class="py-5 px-4">
+            <h2 class="mb-4">O'quvchilar</h2>
+            <div class="list-group">
+                <a href="./index.html" class="list-group-item list-group-item-action " aria-current="true">
+                    Bosh sahifa
+                </a>
+                <a href="./oquvchilar.html" class="list-group-item list-group-item-action active">O'quvchilar</a>
+                <a href="./oqtuvchilar.html" class="list-group-item list-group-item-action">O'qtuvchilar</a>
+                <a href="./xodimlar.html" class="list-group-item list-group-item-action">Xodimlar</a>
+                <a href="./fanlar.html" class="list-group-item list-group-item-action">Fanlar</a>
+                <a href="./xonalar.html" class="list-group-item list-group-item-action">Xonalar</a>
+                <a href="./dars.html" class="list-group-item list-group-item-action">Dars jadvallari</a>
+            </div>
+            </div>
+        </div>
+
+
+        <!--  -->
+
+
+        
+        <div id="rightside">
+            <header class=" headerr1 px-5 py-2 d-flex justify-content-between" id="header1">
+                <button id="harakat" onclick="toggle()">
+                    <img src="./rasmar/icon.jpg" alt="">
+                </button>
+                <button id="dark1">
+                    <img id="imgid" src="./rasmar/tun.png" alt="">
+                </button>
+            </header>
+
+
+
+            
+            <div class="content p-5" id="contentid">
+                <div class="bolim mb-4">
+                    <h2>O'quvchilar</h2>
+                    <h2 id="ozgar"></h2> 
+                </div>
+
+                <!-- filter -->
+                <div class="row filters mb-4" style="width: 100%;">
+                    <div class="col-3 d-flex justify-content-between" style="width: 100%;">
+                        <div><input type="text" class="form-control" placeholder="Filter" onchange="filter(event)"></div>
+                        <div><button id="ortga" onclick="Ortga()">Bitta ortga</button></div>
+                        <div><button class="daletTable" onclick="DaletTable()">Barchasini O'chirish</button></div>
+                    </div>
+                </div>
+
+                <table class="table" id="tableBox">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ismi</th>
+                            <th>Familyasi</th>
+                            <th>sinfi</th>
+                            <th>Nomeri</th>
+                            <th>O'chirish</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyId">
+                        <tr id="1">
+                            <th>1</th>
+                            <td>Iqboljon</td>
+                            <td>Shuhratov</td>
+                            <td>7-'A'</td>
+                            <td>+998940664060</td>
+                            <td><button class="dalet" onclick="DeletTable(event)">Dalet</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="./global.js"></script>
+    <script src="./o'quvchilar/oquvchi.js"></script>
+    
+    
+
+
+</body>
+</html>

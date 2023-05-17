@@ -1,0 +1,187 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+.list-group-item{
+    font-weight: bold;
+    box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.596);
+}
+
+
+
+main{
+    width: 100%;
+    height: 100vh;
+#fixed{
+    width: 300px;
+    height: 100%;
+    #sidebar{
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(to right top, blue, rgb(0, 142, 52));
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+}
+    #rightside{
+        flex: 1;
+
+        .headerr1{
+            width: 100%;
+            height: 7%;
+            background-color: white;
+            display: fixed;
+
+            button{
+                width: 40px;
+                height: 40px;
+                border: none;
+                background-color: white;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    transition: 3s;
+                }
+            }
+        }
+
+        .content{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            table{
+                tr:hover{
+                    background-color: rgba(149, 126, 126, 0.464);       
+                }
+                tr{
+
+                    th{
+                        .dalet{
+                            padding: 10px;
+                            border: none;
+                            border-radius: 20px;
+                        }
+                    }
+                    td{
+                        .dalet{
+                            padding: 10px;
+                            border: none;
+                            border-radius: 20px;
+                        } 
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
+// ortga knopkasi stayl qismi
+#ortga{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(0, 7, 89);
+    color: white;
+}
+
+.daletTable{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(0, 7, 89);
+    color: white; 
+}
+
+
+
+
+
+.content2{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .bolim{
+        color: white;
+    }
+    table{
+        color: white;
+        background-color: rgb(19, 17, 17);
+        box-shadow: 0px 10px 10px 0px rgb(80, 71, 71);
+
+        tr:hover{
+            background-color: rgb(50, 44, 44);
+
+        }
+        .dalet{
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+        } 
+    }
+
+
+    
+  
+
+}
+
+
+.hide {
+    display: none;
+}
+
+#sidebar .list-group-item{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: rgb(215, 215, 215);
+    background: linear-gradient(to right top, rgb(0, 0, 79), rgb(0, 81, 30));
+
+}
+
+
+// tun kun funcsiyasii ishga tushirganda ishlaydi
+
+.headerr2{
+    width: 100%;
+    height: 7%;
+    background-color: black;
+    border-bottom: 1px solid white;
+    button{
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: white;
+        img{
+            width: 30px;
+            height: 30px;
+            transition: 3s;
+        }
+    }
+}
+
+
+.bolim {
+    display: flex;
+    justify-content: space-between;
+}
+
+// ////////////////////////////////////////////////////////
+
+.dalet:hover{
+    background-color: red;
+    color: white;
+}
+
+.dalet:active{
+    background-color: rgb(107, 0, 0);
+}

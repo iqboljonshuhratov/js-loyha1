@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom stillar bilan ishlash</title>
+    <link rel="stylesheet" href="./bootstrapt/index.css">
+    <link rel="stylesheet" href="./ish_css/ish.css">
+</head>
+<body id="B" onload="loaded()" onkeyup="keyUp(event)">
+    <main class="d-flex " id="good" >
+
+        <div id="fixed">
+        <div id="sidebar" class="py-5 px-4">
+            <h2 class="mb-4">Maktab</h2>
+            <div class="list-group">
+                <a href="./index.html" class="list-group-item list-group-item-action active" aria-current="true">
+                    Bosh sahifa
+                </a>
+                <a href="./oquvchilar.html" class="list-group-item list-group-item-action">O'quvchilar</a>
+                <a href="./oqtuvchilar.html" class="list-group-item list-group-item-action">O'qtuvchilar</a>
+                <a href="./xodimlar.html" class="list-group-item list-group-item-action">Xodimlar</a>
+                <a href="./fanlar.html" class="list-group-item list-group-item-action">Fanlar</a>
+                <a href="./xonalar.html" class="list-group-item list-group-item-action">Xonalar</a>
+                <a href="./dars.html" class="list-group-item list-group-item-action">Dars jadvallari</a>
+            </div>
+            </div>
+        </div>
+
+
+        <!--  -->
+
+
+        
+        <div id="rightside">
+            <header class=" headerr1 px-5 py-2 d-flex justify-content-between" id="header1">
+                <button id="harakat" onclick="toggle()">
+                    <img src="./rasmar/icon.jpg" alt="">
+                </button>
+                <button id="dark1">
+                    <img id="imgid" src="./rasmar/tun.png" alt="">
+                </button>
+            </header>
+
+
+
+            
+            <div class="content p-5" id="contentid">
+                <div class="bolim">
+                    <h2>Bo'limlar</h2>
+                    <h2 id="ozgar"></h2>
+                </div>
+                <div class="container" id="d1"></div>
+
+            </div>
+        </div>
+
+
+    </main>
+    
+    
+
+
+    <script src="./bootstrapt/index.js"></script>
+    <script src="./ish_js/ish.js"></script>
+</body>
+</html>
